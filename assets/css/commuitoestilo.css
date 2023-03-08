@@ -1,0 +1,407 @@
+/*GERAL*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', Arial, sans-serif;
+    background-color: #F3F3F3;
+}
+
+h1,h2,h3,figure,li,img {
+	margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #181717;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+	margin: 2% 20px 10% 20px;
+}
+
+.flex-container {
+	display: flex;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+.section {
+    margin-top: 5em;
+    scroll-margin-top: 50px;
+}
+
+
+/*TOP SITE*/
+.top-site {
+	justify-content: space-between;
+	padding: 30px 0;
+    align-items: baseline;
+}
+
+.mobile-menu {
+    display: block;
+}
+
+.close-mobile-menu {
+    display: none;
+}
+
+.list-menu {
+    position: absolute;
+    width: 100%;
+    right: -150%;
+    height: 100vh;
+    background-color: rgba(243, 243, 243, 0.96);
+    text-align: center;
+    font-size: 2.5em;;
+}
+
+.list-menu li {
+    margin-top: 6vh;
+    margin-bottom: 6vh;    
+}
+
+.mobile-menu.visible {
+    display: none;
+}
+
+.close-mobile-menu.visible {
+    display: block;
+}
+
+.list-menu.visible {
+    right: 0;
+}
+
+
+/*INTRO*/
+.title {
+    align-items: flex-end;
+}
+
+.intro {
+    padding-top: 80px;
+}
+
+.sub-title {
+    color: #606060;
+}
+
+
+/*WORK*/
+.work-title {
+    margin-top: 2em;    
+}
+
+.collapsible {
+    color: #606060;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding-bottom: 2em;
+}
+  
+.collapsible:after {
+    content: '\002B';
+    float: right;
+}
+  
+.active:after {
+    content: "\2212";
+}
+  
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: solid 2px;
+    justify-content: space-between;
+}
+
+.content p {
+    padding-bottom: 5%;
+}
+
+.content img {
+    width: 100%;
+}
+
+
+/*SKILLS*/
+.skills-list {
+    line-height: 2;
+    margin-top: 2em;
+}
+
+.skills-list ul {
+    padding: 0 0 0 20px;
+    list-style-type: disc;
+    margin: 0;
+}
+
+
+/*EDUCATION*/
+.course {
+    margin-top: 2em;
+}
+
+.education-content {
+    justify-content: space-between;
+    border-bottom: #181717 solid 2px;
+    padding-bottom: 1.5em;
+}
+
+.school {
+    margin-top: 0%;
+    color: #606060;
+}
+
+
+/*PEOPLE WHO INSPIRE ME*/
+.images {
+    margin-top: 2em;
+}
+
+.images img {
+    width: 100%;
+}
+
+.images h3 {
+    color: #EB5A47;
+}
+
+
+/*GET IN TOUCH*/
+.touch {
+    margin: 5em 0;
+    text-align: center;
+}
+
+.touch h2 {
+    margin-bottom: 0.5em;
+}
+
+.button {
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #EB5A47;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+
+/*FOOTER*/
+.footer {
+    text-align: center;
+}
+
+.copyright {
+    color: #EB5A47;
+}
+
+.social {
+    margin-bottom: 15px;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+
+/*RESPONSIVE - BREAKPOINT 1*/
+@media only screen and (min-width: 600px) {
+
+    /*GERAL*/
+    .container {
+        margin: 2% 50px;
+    }
+
+    /*INTRO*/
+    .intro {
+        width: 85%;
+    }
+
+    .emoji img {
+        width: 40px;
+    }
+
+    /*PEOPLE WHO INSPIRE ME*/
+    .images-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 2em;
+    }
+
+    .images {
+        width: 30%;
+        margin-top: 0;
+    }
+
+    /*FOOTER*/
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .copyright {
+        order: 1;
+    }
+
+    .social {
+        order: 2;
+    }
+
+    .social a {
+        margin-left:60px;
+    }
+ }
+
+
+/*RESPONSIVE - BREAKPOINT 2*/
+@media only screen and (min-width: 750px) {
+  
+    /*GERAL*/
+    .line-divider {
+        display: block;
+    }
+    
+    /*INTRO*/
+    .intro {
+        width: 75%;
+    }
+
+    /*TOP-SITE*/
+    .list-menu {
+        display: flex;
+        position: static;
+        font-size: 1em;
+        background-color: transparent;
+        height: auto;
+    }
+
+    .list-menu li {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .list-menu a {
+        margin-left: 60px;
+    }
+    
+    .list-menu a:hover {
+        text-decoration: line-through #EB5A47 4px;
+    }
+
+    /*ABOUT*/
+    .about {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about div {
+        width: 65%;
+    }
+
+    /*WORK*/
+    .content {
+        display: flex;
+        justify-content: space-between;       
+    }
+
+    .content p {
+        order: 1;
+        width: 40%;
+    }
+    
+    .content figure {
+        order: 2;
+        width: 40%;
+        padding-right: 10%;
+    }
+    
+    .content img {
+        width: 100%;
+        padding-bottom: 10%;
+    }
+
+    /*SKILLS*/
+    .skills {
+        display: flex;
+        justify-content: space-between;    
+    }
+
+    .skills-list {
+        display: flex;
+        width: 65%;
+        margin: 0;
+    }
+    
+    .skills-list ul:nth-child(2) {
+        padding-left: 90px;
+    }
+
+    /*EDUCATION*/
+    .education-content {
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+
+    .education-content p {
+        width: 60%;
+    }
+
+    /*GET IN TOUCH*/
+    .touch {
+        margin: 15% 0;
+        text-align: left;
+    }
+  }
+
+
+  /*RESPONSIVE - BREAKPOINT 3*/
+  @media only screen and (min-width: 1024px) {
+
+    /*GERAL*/
+    .container {
+        margin: 2% 100px;
+    }
+
+    h1 {
+        font-size: 3.3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .section {
+        margin-top: 10%;
+    }
+    
+    /*INTRO*/
+    .emoji img {
+        width: 60px;
+    }    
+ }
